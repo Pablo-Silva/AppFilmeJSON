@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void downloadJSON(View view){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = Constantes.URL_IP;
+        String url = Constantes.URL_SERVER;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         final Gson gson = builder.create();
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = Constantes.URL_IP;
+        String url = Constantes.URL_SERVER;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

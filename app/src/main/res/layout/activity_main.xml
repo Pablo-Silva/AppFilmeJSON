@@ -11,13 +11,16 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginBottom="10dp"
+        android:text="JSON"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnRaw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_blue_dark"
         android:onClick="downloadJSON"
         android:text="Baixar RAW" />
 
@@ -25,6 +28,7 @@
         android:id="@+id/btnGJON"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
         android:onClick="downloadGSON"
-        android:text="Baixar Com GJON" />
+        android:text="Baixar Com GSON" />
 </LinearLayout>
